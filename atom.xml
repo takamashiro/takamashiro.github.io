@@ -112,9 +112,9 @@
       <category term="MacOS" scheme="http://yoursite.com/categories/MacOS/"/>
     
     
-      <category term="iOS开发" scheme="http://yoursite.com/tags/iOS%E5%BC%80%E5%8F%91/"/>
-    
       <category term="MacOS" scheme="http://yoursite.com/tags/MacOS/"/>
+    
+      <category term="iOS开发" scheme="http://yoursite.com/tags/iOS%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
@@ -137,9 +137,9 @@
       <category term="MacOS" scheme="http://yoursite.com/categories/MacOS/"/>
     
     
-      <category term="MacOS" scheme="http://yoursite.com/tags/MacOS/"/>
-    
       <category term="黑苹果" scheme="http://yoursite.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+      <category term="MacOS" scheme="http://yoursite.com/tags/MacOS/"/>
     
   </entry>
   
