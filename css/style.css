@@ -385,7 +385,6 @@ a {
   }
   #container .article .article-meta .article-date {
     font-size: 12px;
-    -webkit-border-radius: 0;
     border-radius: 0;
     color: #666;
     background: none;
@@ -518,7 +517,6 @@ a {
     bottom: 5px;
     border: none;
     padding: 0.2em 0.4em;
-    -webkit-border-radius: 6px;
     border-radius: 6px;
     background-color: #ee6252;
     font-size: 14px;
@@ -549,7 +547,6 @@ a {
   #container .toc-article ol {
     margin: 0;
     padding: 0.5em;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
   }
   #container .toc-article ol ol {
@@ -631,7 +628,6 @@ a {
   display: block;
   -webkit-box-shadow: 0 0 0 2px rgba(255,255,255,0.5), 0px 2px 20px 3px rgba(0,0,0,0.25);
   box-shadow: 0 0 0 2px rgba(255,255,255,0.5), 0px 2px 20px 3px rgba(0,0,0,0.25);
-  -webkit-border-radius: 300px;
   border-radius: 300px;
   width: 128px;
   height: 128px;
@@ -649,7 +645,6 @@ a {
 #header .profilepic img {
   width: 20%;
   height: 20%;
-  -webkit-border-radius: 300px;
   border-radius: 300px;
   opacity: 0;
   -webkit-transition: all 0.2s ease-in;
@@ -2059,7 +2054,6 @@ a {
 #header .header-menu li a:hover {
   color: #fff;
   background: #258fb8;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   padding: 3px;
   margin: 2px;
@@ -2102,7 +2096,6 @@ a {
   float: left;
 }
 #header .header-nav .social a {
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   display: -moz-inline-stack;
   display: inline-block;
@@ -2218,7 +2211,6 @@ a {
 }
 #header .switch-part3 .switch-friends-link {
   margin-right: 9px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   padding: 5px;
 }
@@ -2269,7 +2261,6 @@ a {
   top: 30px;
   padding: 1px;
   border: none;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   cursor: pointer;
   outline: none;
@@ -2342,7 +2333,6 @@ color
   font-family: inherit;
   border: 2px solid transparent;
   border-bottom: 2px solid #d3d3d3;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   opacity: 0.7;
   background: none;
@@ -2363,7 +2353,6 @@ color
   font-family: inherit;
   border: 2px solid transparent;
   border-bottom: 2px solid #d3d3d3;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   opacity: 0.7;
   background: none;
@@ -2606,7 +2595,6 @@ color
   border: 1px solid #2f2f2f;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  -webkit-border-radius: 6px;
   border-radius: 6px;
   -webkit-box-shadow: 4px 4px 18px rgba(0,0,0,0.46);
   box-shadow: 4px 4px 18px rgba(0,0,0,0.46);
@@ -2762,7 +2750,6 @@ color
   line-height: 16px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
@@ -2796,7 +2783,6 @@ color
 #article-nav .article-nav-link-wrap strong {
   background: #999;
   color: #fff;
-  -webkit-border-radius: 100%;
   border-radius: 100%;
   width: 15px;
   height: 15px;
@@ -2818,7 +2804,6 @@ color
 }
 #tocButton {
   position: fixed;
-  -webkit-border-radius: 6px;
   border-radius: 6px;
   width: 71px;
   height: 29px;
@@ -2846,7 +2831,6 @@ color
   margin: 20px 10px 10px 10px;
   background: #3f3f3f;
   border: 1px solid #080808;
-  -webkit-border-radius: 6px;
   border-radius: 6px;
   overflow: auto;
   -webkit-border-radius: 2.8%;
@@ -2916,7 +2900,6 @@ color
   background: #414141;
   -webkit-box-shadow: 4px 4px 18px rgba(0,0,0,0.46);
   box-shadow: 4px 4px 18px rgba(0,0,0,0.46);
-  -webkit-border-radius: 6px;
   border-radius: 6px;
 }
 .copyright span {
@@ -3262,7 +3245,6 @@ color
   padding: 1px 8px;
   font-size: 90%;
   -webkit-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   font-family: Consolas, "Courier New", Courier;
   text-shadow: none;
@@ -3273,7 +3255,6 @@ color
 .article-entry p a {
   border: dashed 1px #000;
   padding: 8px 8px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   background-color: #2f2e2e;
   word-wrap: break-word;
@@ -3318,7 +3299,6 @@ color
   border: 1px dashed #020202;
   padding: 0.2em 0.6em;
   font-weight: normal;
-  -webkit-border-radius: 6px;
   border-radius: 6px;
 }
 .article-entry h3:hover {
@@ -3332,7 +3312,6 @@ color
   padding: 0.2em 0.6em;
   font-weight: normal;
   -webkit-border-radius: 6px;
-  -webkit-border-radius: 6px;
   border-radius: 6px;
 }
 .article-entry h5 {
@@ -3343,7 +3322,6 @@ color
   padding: 0.2em 0.6em;
   font-weight: normal;
   -webkit-border-radius: 6px;
-  -webkit-border-radius: 6px;
   border-radius: 6px;
 }
 .article-entry h6 {
@@ -3352,7 +3330,6 @@ color
   border: 1px dashed #020202;
   padding: 0.2em 0.6em;
   font-weight: normal;
-  -webkit-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
 }
@@ -3400,7 +3377,6 @@ color
   text-transform: capitalize;
 }
 .article-entry .highlight {
-  -webkit-border-radius: 4px;
   border-radius: 4px;
   padding: 0 10px;
 }
@@ -3637,7 +3613,6 @@ pre .link_url {
   background: #4d4d4d;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   display: inline-block;
   color: #fff;
@@ -3789,7 +3764,6 @@ pre .link_url {
   color: #fff;
   width: 80px;
   text-align: center;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   position: absolute;
   z-index: 99;
@@ -3808,7 +3782,6 @@ pre .link_url {
   height: 32px;
   width: 32px;
   background: #fff;
-  -webkit-border-radius: 100px;
   border-radius: 100px;
   position: relative;
   overflow: hidden;
@@ -3852,7 +3825,6 @@ pre .link_url {
   position: absolute;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
-  -webkit-border-radius: 60px;
   border-radius: 60px;
   left: 10px;
   top: 11px;
@@ -3867,7 +3839,6 @@ pre .link_url {
   left: 4px;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
-  -webkit-border-radius: 60px;
   border-radius: 60px;
 }
 .switch-btn .icon-ctn .ribbon {
@@ -3893,7 +3864,6 @@ pre .link_url {
   border-style: solid;
   border-width: 0px 3px 3px 3px;
   border-color: #333;
-  -webkit-border-radius: 0 0 50px 50px;
   border-radius: 0 0 50px 50px;
   position: absolute;
   top: 16px;
@@ -3917,7 +3887,6 @@ pre .link_url {
   border-style: solid;
   border-width: 3px 0 0 3px;
   border-color: #333;
-  -webkit-border-radius: 50px 0 0 0;
   border-radius: 50px 0 0 0;
   position: absolute;
   left: -3px;
@@ -3929,7 +3898,6 @@ pre .link_url {
   border-style: solid;
   border-width: 3px 3px 0 3px;
   border-color: #333;
-  -webkit-border-radius: 50px 50px 0 0;
   border-radius: 50px 50px 0 0;
   position: absolute;
   top: 8px;
@@ -3953,7 +3921,6 @@ pre .link_url {
   border-style: solid;
   border-width: 0 3px 3px 0;
   border-color: #333;
-  -webkit-border-radius: 0 0 50px 0;
   border-radius: 0 0 50px 0;
   position: absolute;
   left: 5px;
@@ -3963,7 +3930,6 @@ pre .link_url {
   width: 12px;
   height: 14px;
   background: #333;
-  -webkit-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
   margin-left: 10px;
   margin-top: 2px;
@@ -4009,7 +3975,6 @@ pre .link_url {
   float: left;
   padding: 0 5px 0px 10px;
   position: relative;
-  -webkit-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
   margin: 5px 9px 5px 8px;
 /* font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace; */
@@ -4031,7 +3996,6 @@ pre .link_url {
   width: 4px;
   height: 4px;
   background-color: #fff;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
   box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
@@ -4145,7 +4109,6 @@ pre .link_url {
   -moz-transform: translate(-50%);
   -ms-transform: translate(-50%);
   transform: translate(-50%);
-  -webkit-border-radius: 6px;
   border-radius: 6px;
   max-width: 200px;
 /*font-family: Verdana,"Lantinghei SC","Hiragino Sans GB","Microsoft Yahei",Helvetica,arial,\5b8b\4f53,sans-serif;*/
@@ -4195,12 +4158,10 @@ pre .link_url {
   display: block;
 }
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 8px;
   border-radius: 8px;
   background-color: rgba(0,0,0,0.2);
 }
 ::-webkit-scrollbar-thumb:hover {
-  -webkit-border-radius: 8px;
   border-radius: 8px;
   background-color: rgba(0,0,0,0.5);
 }
@@ -4268,7 +4229,6 @@ pre .link_url {
   width: 6px;
   height: 6px;
   border: 1px solid #999;
-  -webkit-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #aaa;
