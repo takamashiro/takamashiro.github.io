@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-06T02:56:12.714Z</updated>
+  <updated>2016-10-31T11:31:05.413Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常见排序算法时间复杂度</title>
+    <link href="http://yoursite.com/2016/10/10/%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+    <id>http://yoursite.com/2016/10/10/常见排序算法时间复杂度/</id>
+    <published>2016-10-10T04:46:21.000Z</published>
+    <updated>2016-10-31T11:31:05.413Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="常见排序算法及时间空间复杂度稳定性表"><a href="#常见排序算法及时间空间复杂度稳定性表" class="headerlink" title="常见排序算法及时间空间复杂度稳定性表"></a>常见排序算法及时间空间复杂度稳定性表</h3><p><img src="http://blog.chinaunix.net/attachment/201201/18/21457204_1326898064RUxx.jpg" alt="常见排序算法"><br><a id="more"></a></p>
+<h3 id="1-时间复杂度"><a href="#1-时间复杂度" class="headerlink" title="1. 时间复杂度"></a>1. 时间复杂度</h3><p>　　时间复杂度是指程序运行从开始到结束所需要的时间。时间复杂度的计算一般比较麻烦，故在数据结构的研究中很少提及时间复杂度。为了便于比较同一个问题的不同算法，通常做法是，从算法中选取一种对于所研究的问题来说是基本操作的原操作，以该基本操作重复执行的次数做为算法的时间量度。基本操作应是其重复执行次数和算法时间成正比的原操作，多数情况下它是最深层循环内的语句中的操作。算法的执行次数还要随输入集有关，此时要考虑所有可能输入数据的期望值，此时的算法时间复杂度叫平均时间复杂度。有事平均时间复杂度难以确定，此时分析最坏情况下算法的一个上界，此时称为最坏时间复杂度。</p>
+<h3 id="2-时间复杂度的表示方法"><a href="#2-时间复杂度的表示方法" class="headerlink" title="2. 时间复杂度的表示方法"></a>2. 时间复杂度的表示方法</h3><p>　　设解决一个问题的规模为n，基本操作被重复执行次数是n的一个函数f（n），则时间复杂度可记作： T(n)=O(f(n)) 它表示随着问题规模n的增长，算法执行时的增长率和f(n)的增长率相同。其中T(n)叫算法的渐进时间复杂度，简称时间复杂度。算法的时间复杂度考虑的只是对于问题规模n的增长率，则在难以精确计算的情况下，只需考虑它关于n的增长率或阶即可。</p>
+<p>　　例如　<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">　<span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=n;++i)</div><div class="line">　　　<span class="keyword">for</span>(j=<span class="number">2</span>;j&lt;=i<span class="number">-1</span>;++j)</div><div class="line">　　　&#123;</div><div class="line">　　　　++x;</div><div class="line">　　　　a[i,j]=x;</div><div class="line">　　　&#125;</div></pre></td></tr></table></figure></p>
+<p>　　其中++x语句频度为：1+2+3+…+n-2=(n-1)(n-2)/2=(n2-3n+2)/2故算法的时间复杂度可表示为：T(n)=O(n2)</p>
+<h3 id="3-时间复杂度的计算方法"><a href="#3-时间复杂度的计算方法" class="headerlink" title="3. 时间复杂度的计算方法"></a>3. 时间复杂度的计算方法</h3><p>　　时间复杂的推导方法一般如下：</p>
+<p>　　第一步：用常数1取代运行时间中的所有加法常数。</p>
+<p>　　第二步：在修改后的运行次数函数中，只保留最高阶项。</p>
+<p>　　第三步：如果最高阶项存在且不是1，则去除与这个项相乘的常数。</p>
+<p>　　时间复杂度一般分为以下几种，分别是：</p>
+<p>　　（1）常数阶 首先顺序结构的时间复杂度。　</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">main（） </div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> sum=<span class="number">0</span>,n=<span class="number">100</span>;</div><div class="line">    sum=(<span class="number">1</span>+n)*n/<span class="number">2</span>;</div><div class="line">    <span class="built_in">printf</span>(“%d”,sum);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>算法的时间复杂度为O(1)。 这个算法的运行次数函数是f(n)=3。根据我们推导的方法，第一步就是把常数项3改为1。在保留最高阶项时发现，它根本没有最高阶项，所以这个算法的时间复杂度为O(1)。</p>
+<p>　　（2）线性阶 要确定某个算法的阶次，需要确定某个特定语句或某个语句集运行的次数。因此，要分析算法的复杂度，关键就是要分析循环结构的运行情况。　<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> i; <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</div><div class="line">&#123; </div><div class="line">  <span class="comment">/*时间复杂度为O(1)的程序步骤序列*/</span></div><div class="line">&#125;</div><div class="line">　　（<span class="number">3</span>）对数阶</div><div class="line"></div><div class="line"><span class="keyword">int</span> count=<span class="number">1</span>;</div><div class="line"><span class="keyword">while</span>(count&lt;n)</div><div class="line">&#123; count=count*<span class="number">2</span>; <span class="comment">/*时间复杂度为O(1)的程序步骤序列*/</span>&#125;</div></pre></td></tr></table></figure></p>
+<p>　　由于每次count乘以2之后，就距离n更近了一点。也就是说，有多少个2相乘后大于n，则会退出循环。由$2^x=n$得到$x=log_2n$。所以这个循环的时间复杂度为O(log2n)。<br>（4）平方阶<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">inti,j; </div><div class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</div><div class="line">&#123; </div><div class="line">    <span class="keyword">for</span>(j=<span class="number">0</span>;j&lt;n;j++)</div><div class="line">    &#123; <span class="comment">/*时间复杂度为O(1)的程序步骤序列*/</span></div><div class="line">     &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>循环的时间复杂度等于循环体的复杂度乘以该循环运行的次数。间复杂度为O（$$n^2$$）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;常见排序算法及时间空间复杂度稳定性表&quot;&gt;&lt;a href=&quot;#常见排序算法及时间空间复杂度稳定性表&quot; class=&quot;headerlink&quot; title=&quot;常见排序算法及时间空间复杂度稳定性表&quot;&gt;&lt;/a&gt;常见排序算法及时间空间复杂度稳定性表&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://blog.chinaunix.net/attachment/201201/18/21457204_1326898064RUxx.jpg&quot; alt=&quot;常见排序算法&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="算法" scheme="http://yoursite.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="排序算法" scheme="http://yoursite.com/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>ReactiveCocoa入门教程（上）：第一部分</title>
@@ -137,9 +175,9 @@
       <category term="MacOS" scheme="http://yoursite.com/categories/MacOS/"/>
     
     
-      <category term="黑苹果" scheme="http://yoursite.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
-    
       <category term="MacOS" scheme="http://yoursite.com/tags/MacOS/"/>
+    
+      <category term="黑苹果" scheme="http://yoursite.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
   </entry>
   
